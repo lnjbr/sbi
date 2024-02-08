@@ -1,0 +1,21 @@
+{
+  "name": "sbi",
+  "version": "1.0.0",
+  "description": "Parses SBI's annual report for companies complicit apartheid",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon . ${NPM_CONFIG_PDF_PATH}",
+    "refresh": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2",
+    "pdf2json": "3.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.3"
+  }
+}
