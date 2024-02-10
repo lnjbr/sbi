@@ -1,10 +1,10 @@
 import complicitCorps from "./complicitCorps.js"
 import PDFParser from "pdf2json"
+import pdfName from './pdfName.js'
 
 const read = async () => {
-  const path = process.argv[2];
   const pdfParser = new PDFParser();
-  pdfParser.loadPDF(path || "./sbi_063023.pdf")
+  pdfParser.loadPDF(pdfName)
   
   const res = await new Promise((resolve, reject) => {
     pdfParser.on("pdfParser_dataError", errData => reject(console.error("Could not access specified file.")))

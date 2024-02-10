@@ -234,6 +234,11 @@ export default {
     categories: [],
     sources: [],
   },
+  'ALTICE EUROPE N.V.': {
+    altNames: ['ALTICE FINANCING', 'ALTICE FING', 'ALTICE FRANCE'],
+    categories: ['financing'],
+    sources: [],
+  },
   ////////////////////////////////////////////
 
   //////////////////////////////

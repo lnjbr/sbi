@@ -83,8 +83,6 @@ app.get('/totals/:corp?', async (req, res) => {
   }
 })
 
-
-
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`)
+  console.log(`Listening`)
 })
