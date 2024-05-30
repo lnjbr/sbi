@@ -50,7 +50,7 @@ export default {
   },
   'GENERAL ELECTRIC CO': {
     commonName: 'General Electric',
-    altNames: ['GE HEALTHCARE TECHNOLOGY'],
+    altNames: ['GE HEALTHCARE TECHNOLOGY', 'GENERAL ELECTRIC CO', 'GE HEALTHCARE TECH'],
     categories: ['greenwashing', 'weapons', 'whoprofits', 'investigate'],
     sources: ['https://www.whoprofits.org/companies/company/6337?general-electric', 'https://investigate.afsc.org/company/general-electric'],
   },
@@ -76,7 +76,7 @@ export default {
     sources: ['https://www.whoprofits.org/companies/company/3822', "https://investigate.afsc.org/company/israel-discount-bank"],
   },
   'BANK HAPOALIM BM': {
-    commanName:'Hapoalim Bank',
+    commonName:'Hapoalim Bank',
     altNames: [],
     categories: ['financing', 'settlements', 'israeli', 'whoprofits', 'investigate'],
     sources: ["https://www.whoprofits.org/companies/company/3825?hapoalim-bank", "https://investigate.afsc.org/company/bank-hapoalim"],
@@ -94,13 +94,13 @@ export default {
     sources: ['https://www.whoprofits.org/companies/company/3753', "https://investigate.afsc.org/company/mizrahi-tefahot-bank"],
   },
   'SOLAREDGE TECHNOLOGIES INC': {
-    commanName: 'SolarEdge',
+    commonName: 'SolarEdge',
     altNames: [],
     categories: ['settlements', 'israeli', 'whoprofits', 'greenwashing', 'investigate'],
     sources: ['https://www.whoprofits.org/companies/company/3732', "https://investigate.afsc.org/company/solaredge-technologies"],
   },
   'TEVA PHARMACEUTICAL IND LTD': {
-    commanName: 'Teva Pharmaceutical Industries',
+    commonName: 'Teva Pharmaceutical Industries',
     altNames: ['TEVA PHARM'],
     categories: ['pharma', 'settlements', 'israeli', 'whoprofits'],
     sources: ['https://www.whoprofits.org/companies/company/4212', 'https://investigate.afsc.org/company/teva-pharmaceutical-indus'],
@@ -114,7 +114,7 @@ export default {
   ////////////////////////////////////////////
   
   'CYBERARK SOFTWARE LTD/ISRAEL': {
-    commanName: 'CyberArk Software',
+    commonName: 'CyberArk Software',
     altNames: [],
     categories: ['israeli', 'nasdaq', 'tech'],
     sources: ['https://www.nasdaq.com/market-activity/stocks/cybr'],
@@ -132,7 +132,7 @@ export default {
   'AXA SA': {
     commonName: 'AXA',
     altNames: [],
-    categories: ['bds', 'financing'],
+    categories: ['bds'],
     sources: ['https://bdsmovement.net/axa-divest'],
   },
   'HEWLETT PACKARD': {
@@ -142,7 +142,7 @@ export default {
     sources: ['https://www.whoprofits.org/companies/company/3774?hewlett-packard-enterprise-hpe',],
   },
   'PUMA SE': {
-    commanName: 'Puma',
+    commonName: 'Puma',
     altNames: [],
     categories: ['bds', 'apparel'],
     sources: ['https://bdsmovement.net/boycott-puma'],
@@ -150,7 +150,7 @@ export default {
   'WSP GLOBAL INC': {
     commonName: 'WSP Global Inc',
     altNames: [],
-    categories: ['financing', 'investigate'],
+    categories: ['investigate'],
     sources: ['https://investigate.afsc.org/company/wsp-global'],
   },
   'AIRBNB INC': {
@@ -160,8 +160,8 @@ export default {
     sources: ['https://www.whoprofits.org/companies/company/3815?airbnb'],
   },
   'CATERPILLAR INC': {
-    commanName: 'Caterpillar',
-    altNames: ['CATERPILLAR FINL'],
+    commonName: 'Caterpillar',
+    altNames: ['CATERPILLAR FINL', 'CATERPLR'],
     categories: ['construction','whoprofits', 'investigate'],
     sources: ['https://www.whoprofits.org/companies/company/3772?caterpillar', 'https://investigate.afsc.org/company/caterpillar'],
   },
@@ -262,7 +262,7 @@ export default {
     sources: ['https://www.whoprofits.org/companies/company/6529?cisco-systems'],
   },
   'DELL TECHNOLOGIES C': {
-    commonName: '',
+    commonName: 'DELL',
     altNames: ['DELL TECHNOLOGIES', 'DELL INT LLC', 'DELL EQUIPMENT'],
     categories: ['tech', 'surveillance', 'whoprofits'],
     sources: ['https://www.whoprofits.org/companies/company/7370?dell-technologies'],
@@ -274,7 +274,7 @@ export default {
     sources: ['https://www.whoprofits.org/companies/company/4124?mitsubishi-motors-corporation'],
   },
   'ALTICE EUROPE N.V.': {
-    commonName: '',
+    commonName: 'Altice',
     altNames: ['ALTICE FINANCING', 'ALTICE FING', 'ALTICE FRANCE'],
     categories: ['enterprise', 'telecom', 'whoprofits', 'investigate'],
     sources: ['https://www.whoprofits.org/companies/company/3837?altice', 'https://investigate.afsc.org/company/altice-europe'],
@@ -290,12 +290,13 @@ export default {
     sources: ['https://www.nasdaq.com/market-activity/stocks/chkp'],
   },
   'GLOBAL E ONLINE LTD': {
-    commanName: 'Global-E Online Ltd.',
+    commonName: 'Global-E Online Ltd.',
     altNames: [],
     categories: ['israeli', 'nasdaq'],
     sources: ['https://www.nasdaq.com/market-activity/stocks/glbe'],
   },
   'INMODE LTD': {
+    commonName: 'InMode',
     altNames: [],
     categories: ['israeli', 'nasdaq'],
     sources: ['https://www.nasdaq.com/market-activity/stocks/inmd'],
@@ -314,7 +315,7 @@ export default {
   },
   'NICE LTD': {
     commonName: 'NICE Ltd.',
-    altNames: ['NICE LTD SPON ADR'],
+    altNames: ['NICE LTD SPON ADR', 'NICE LTD'],
     categories: ['israeli', 'surveillance', 'tech'],
     sources: ['https://investigate.afsc.org/company/nice'],
   },
@@ -349,14 +350,14 @@ export default {
     sources: ['https://www.nasdaq.com/market-activity/stocks/taro'],
   },
   'TOWER SEMICONDUCTOR LTD': {
-    commonName: '',
+    commonName: 'Tower Semiconductor',
     altNames: [],
     categories: ['tech', 'israeli', 'nasdaq'],
     sources: ['https://www.nasdaq.com/market-activity/stocks/tsem'],
   },
   'WIX.COM LTD': {
-    commonName: '',
-    commanName: 'Wix.com',
+    commonName: 'Wix.com',
+    commonName: 'Wix.com',
     altNames: [],
     categories: ['israeli', 'tech'],
     sources: ['https://boycottwix.org/'],
@@ -446,7 +447,7 @@ export default {
     sources: ['https://www.whoprofits.org/companies/company/4175?toyota-motor-corporation'],
   },
   'VOLKSWAGEN': {
-    commanName: 'Volkswagen Group',
+    commonName: 'Volkswagen Group',
     altNames: [],
     categories: ['auto', 'whoprofits'],
     sources: ['https://www.whoprofits.org/companies/company/7374?volkswagen-group'],

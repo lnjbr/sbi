@@ -57,7 +57,7 @@ app.get('/investments/:corp?', async (req, res) => {
   } else {
     const investments = {}
     for (const [key, value] of Object.entries(complicitCorps)) {
-      investments[key] = {"shares": value.shares, "securities": value.securities, "total": value.total}
+      investments[key] = {"commonName": value.commonName, "shares": value.shares, "securities": value.securities, "total": value.total}
     }
     res.send(investments)
   }
