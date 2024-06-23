@@ -18,6 +18,14 @@ export default {
     categories: ['weapons', 'surveillance', 'investigate'],
     sources: ['https://mapliberation.org/plain/entities/GeneralDynamics.html', 'https://investigate.afsc.org/company/general-dynamics']
   },
+  
+  'HONEYWELL INTERNATIONAL INC': {
+    commonName: 'Honey Well',
+    altNames: ['HONEYWELL'],
+    categories: ['weapons'],
+    sources: []
+  },
+
   'LEONARDO DRS INC': {
     commonName: 'Leonardo',
     altNames: [],
