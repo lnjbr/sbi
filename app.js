@@ -5,7 +5,7 @@ import pdfName from './pdfName.js'
 const read = async () => {
   const pdfParser = new PDFParser();
   pdfParser.loadPDF(pdfName)
-  
+  // open PDF
   const res = await new Promise((resolve, reject) => {
     pdfParser.on("pdfParser_dataError", errData => reject(console.error("Could not access specified file.")))
     pdfParser.on("pdfParser_dataReady", res => resolve(res))
@@ -24,17 +24,17 @@ const getPages = (res) => {
       pages[pageNumber] = {}
       const texts = page.Texts
       texts.forEach((text) => {
-        const textRow = text.y
+        const textRow = Math.round((text.y)*100)/100
         const textString = decodeURIComponent(text.R[0].T)
-          if (textString) {
-              textRow in pages[pageNumber] ?
-              pages[pageNumber][textRow].push(textString) : pages[pageNumber][textRow] = [textString]
-          }
-        })
-      }
-    })
+        if (textString) {
+          textRow in pages[pageNumber] ?
+          pages[pageNumber][textRow].push(textString) : pages[pageNumber][textRow] = [textString]
+        }
+      })
+    }
+  })
   return pages
-}
+ }
 
 const filterInvestments = (pages, complicitCorps) => {
   const investments = {}
@@ -53,13 +53,13 @@ const filterInvestments = (pages, complicitCorps) => {
 
   Object.keys(pages).forEach((page) => {
     Object.keys(pages[page]).forEach((row) => {
-        const issuer = pages[page][row].shift().replace('  ', ' ')
+        const issuer = pages[page][row].shift()
         const complicitCorpName = Object.keys(altNames).find((altName) => issuer.includes(altName))
         const corp = issuer && complicitCorpsNames.includes(issuer.match(/^(\D*)/g)[0].trim()) ? issuer.match(/^(\D*)/g)[0].trim() : altNames[complicitCorpName] 
         if (complicitCorpsNames.includes(corp)){
           let type = page.match(/([a-z])+/g)
           investments[corp][type] = investments[corp][type].map((val, i) => Number(val) + Number(pages[page][row].map((val) => val.split(',').join(''))[i]))
-        }
+      }
     })
   })
   return investments
