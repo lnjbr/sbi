@@ -312,7 +312,7 @@ export default {
   },
   'CNH INDUSTRIAL': {
     commonName: 'CNH Industrial',
-    altNames: ['CNH EQUIPMENT'],
+    altNames: ['CNH EQUIPMENT', 'CNH INDUSTRIAL'],
     categories: ['construction'],
     sources: ['https://www.whoprofits.org/companies/company/3770?cnh-industrial-formerly-cnh-global'],
   },
@@ -324,7 +324,7 @@ export default {
   },
   'HITACHI LTD': {
     commonName: 'Hitachi',
-    altNames: ['HITACHI CONSTRUCTION MACHINE'],
+    altNames: ['HITACHI CONSTRUCTION MACHINE', 'HITACHI'],
     categories: ['construction'],
     sources: ['https://www.whoprofits.org/companies/company/4075?hitachi'],
   },
@@ -468,7 +468,7 @@ export default {
   },
   'JAGUAR LAND ROVER': {
     commonName: 'Jaguar Land Rover Automative',
-    altNames: [],
+    altNames: ['JAGUAR LAND ROVER'],
     categories: ['etc'],
     sources: ['https://www.whoprofits.org/companies/company/3995?land-rover'],
   },
@@ -498,13 +498,13 @@ export default {
   },
   'PUMA SE': {
     commonName: 'Puma',
-    altNames: [],
+    altNames: ["PUMA INTERNATIONAL FINAN COMPANY"],
     categories: ['etc'],
     sources: ['https://bdsmovement.net/boycott-puma'],
   },
   'PRIMO WATER CORP': {
     commonName: 'Primo Water Corp',
-    altNames: ['PRIMO WATER'],
+    altNames: ['PRIMO WATER', 'PRIMO BRANDS CORP'],
     categories: ['etc'],
     sources: ['https://investigate.afsc.org/company/primo-water']
   },
@@ -522,13 +522,13 @@ export default {
   },
   'SONY GROUP CORP': {
     commonName: 'Sony Corporation',
-    altNames: [],
+    altNames: ['SONY GROUP CORP', 'SONY CORP'],
     categories: ['etc'],
     sources: ['https://www.whoprofits.org/companies/company/6108?6108-2'],
   },
   'TEMPUR SEALY': {
     commonName: 'Tempur Sealy',
-    altNames: [],
+    altNames: ['TEMPUR SEALY'],
     categories: ['etc'],
     sources: ['https://www.whoprofits.org/companies/company/7212?tempur-sealy'],
   },
