@@ -1,7 +1,6 @@
 import express from "express"
 import complicitCorps from "./app.js"
 
-
 const app = express()
 const port = 3000
 
@@ -15,9 +14,9 @@ if (include || exclude) {
     if (include.every(category => value.categories.includes(category)) &&
         exclude.every(category => !value.categories.includes(category)) &&
         !match.includes(value)) {
-      match.push({[key]: value})
-      Object.keys(totals).forEach((total) =>
-        totals[total] += value.total[total]
+          match.push(key, '$'.concat(complicitCorps[key].total.USD.toLocaleString()), {[key]: value})
+          Object.keys(totals).forEach((total) =>
+            totals[total] += value.total[total]
       )
     }
   }

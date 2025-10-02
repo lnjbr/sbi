@@ -67,7 +67,7 @@ const filterInvestments = (pages, complicitCorps) => {
 
 const calculateTotal = () => {
   for (const [key, value] of Object.entries(complicitCorps)) {
-    complicitCorps[key]["total"] = {"USD": value.shares[1] + value.securities[1],"sharesUSD": value.shares[1], "sharesCount": value.shares[0],"securitiesUSD": value.securities[1]}
+    complicitCorps[key]["total"] = {"USD": parseFloat((value.shares[1] + value.securities[1]).toFixed(0)),"sharesUSD": value.shares[1], "sharesCount": value.shares[0],"securitiesUSD": value.securities[1]}
   }
 }
 
