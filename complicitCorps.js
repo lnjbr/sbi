@@ -218,7 +218,7 @@ export default {
   },
   'PAGAYA TECHNOLOGIES LTD': {
     commonName: 'Pagaya Technologies',
-    altNames: ['PAGAYA AI'],
+    altNames: ['PAGAYA AI', 'PAGAYA TECHNOLOGIES LTD'],
     categories: ['israeli'],
     sources: ['https://www.nasdaq.com/market-activity/stocks/pgy'],
   },
@@ -383,7 +383,7 @@ export default {
   },
   'ALTICE EUROPE N.V.': {
     commonName: 'Altice',
-    altNames: ['ALTICE FINANCING', 'ALTICE FING', 'ALTICE FRANCE'],
+    altNames: ['ALTICE FINANCING', 'ALTICE FING', 'ALTICE FRANCE', 'ALTICE USA'],
     categories: ['etc'],
     sources: ['https://www.whoprofits.org/companies/company/3837?altice', 'https://investigate.afsc.org/company/altice-europe'],
   },
