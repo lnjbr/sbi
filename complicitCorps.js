@@ -36,6 +36,12 @@ export default {
     categories: ['weapons'],
     sources: []
   },
+  'HOWMET AEROSPACE INC': {
+    commonName: 'Howmet Aerospace',
+    altNames: ['HOWMET AEROSPACE'],
+    categories: ['weapons'],
+    sources: []
+  },
   'L3HARRIS': {
     commonName: 'L3Harris',
     altNames: ['L3HARRIS'],
